@@ -1,0 +1,102 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  text-align: inherit;
+  text-decoration: none;
+  vertical-align: none;
+  box-sizing: inherit;
+  background: transparent; }
+
+ol, ul {
+  list-style: none; }
+
+img {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+iframe {
+  width: 100%;
+  display: block; }
+
+input[type="password"],
+input[type="email"],
+input[type="text"],
+input[type="submit"],
+textarea,
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+button,
+input[type="submit"] {
+  cursor: pointer; }
+
+/* Clearfix */
+.group:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.clear-both {
+  clear: both; }
+
+:root {
+  --color-primary: #eb2f64;
+  --color-primary-light: #FF3366;
+  --color-primary-dark: #BA265D;
+  --color-blue-lightest: #f0f8fc;
+  --color-blue-light: #6288a5;
+  --color-blue: #326891;
+  --color-blue-dark: #4d7b9f;
+  --color-blue-darkest: #265e8b;
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-4: #ccc;
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
+  --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
+  --shadow-light: 0 2rem 5rem rgba(0,0,0,.06);
+  --line: 1px solid var(--color-grey-light-2); }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: var(--color-grey-dark);
+  padding: 3rem;
+  box-sizing: border-box; }
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  background-color: var(--color-grey-light-2);
+  box-shadow: var(--shadow-dark);
+  min-height: 50rem; }
+
+.header {
+  display: flex;
+  font-size: 1.4rem;
+  height: 7rem;
+  justify-content: space-between;
+  border-bottom: var(--line);
+  background-color: #fff;
+  align-items: center; }
+
+.logo {
+  width: 4rem;
+  margin-left: 1rem; }

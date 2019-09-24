@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  font-size: 1.4rem;
+  height: 7rem;
+  justify-content: space-between;
+  border-bottom: var(--line);
+  background-color: #fff;
+  align-items: center;
+}
+
+.logo {
+  width: 4rem;
+  margin-left: 1rem;
+}
+
