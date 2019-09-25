@@ -18,7 +18,7 @@
   justify-content: space-around;
   align-self: stretch;
   align-items: center;
-  flex: 0 0 300px;
+  flex: 0 0 30rem;
 
   @include respond(bp-smaller) {
     display: none;
