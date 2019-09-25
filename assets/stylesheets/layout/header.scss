@@ -39,6 +39,10 @@
       background-color: var(--color-blue-light);
       color: #fff;
     }
+
+    @include respond(bp-smaller) {
+      display: hidden;
+    }
   }
 
   &__item:hover &__icon {
