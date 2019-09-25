@@ -13,3 +13,42 @@
   margin-left: 1rem;
 }
 
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-self: stretch;
+  align-items: center;
+  flex: 0 0 300px;
+
+  &__hamburger {
+    display: none;
+  }
+
+  &__item {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+    justify-content: center;
+    flex: 1;
+    text-transform: uppercase;
+    transition: all .2s;
+
+    &:hover {
+      background-color: var(--color-blue-light);
+      color: #fff;
+    }
+  }
+
+  &__item:hover &__icon {
+    fill: #fff;
+  }
+
+  &__icon {
+    height: 2.25rem;
+    width: 2.25rem;
+    fill: var(--color-grey-dark-3);
+    transition: all .2s;
+  }
+}
