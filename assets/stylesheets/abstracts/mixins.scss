@@ -1,25 +1,20 @@
 @mixin respond($breakpoint) {
   @if $breakpoint == bp-smallest {
-    @media only screen and (max-width: 31.25em) {@content}; //600px
+    @media only screen and (max-width: 25em) {@content}; //400px
   }
   @if $breakpoint == bp-smaller {
-    @media only screen and (max-width: 31.25em) {@content}; //600px
+    @media only screen and (max-width: 31.25em) {@content}; //500px
   }
-  @if $breakpoint == tab-port {
+  @if $breakpoint == bp-small {
+    @media only screen and (max-width: 56.25em) {@content}; //600px
+  }
+  @if $breakpoint == bp-medium {
     @media only screen and (max-width: 56.25em) {@content}; //900px
   }
-  @if $breakpoint == tab-land {
+  @if $breakpoint == bp-large {
+    @media only screen and (max-width: 68.75em) {@content}; //1100px
+  }
+  @if $breakpoint == bp-largest {
     @media only screen and (max-width: 75em) {@content}; //1200px
   }
-  @if $breakpoint == big-desktop {
-    @media only screen and (min-width: 112.5em) {@content}; //1800px
-  }
 }
-
-//SASS Variables
-$bp-largest: 75em; //1200px
-$bp-large: 68.75em; //1100px
-$bp-medium: 56.25em; //900px
-$bp-small: 37.5em; // 600px
-$bp-smaller: 31.25em; // 500px
-$bp-smallest: 25em; // 400 px

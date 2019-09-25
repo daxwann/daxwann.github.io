@@ -20,7 +20,7 @@
   align-items: center;
   flex: 0 0 300px;
 
-  &__hamburger {
+  @include respond(bp-smaller) {
     display: none;
   }
 
@@ -38,10 +38,6 @@
     &:hover {
       background-color: var(--color-blue-light);
       color: #fff;
-    }
-
-    @include respond(bp-smaller) {
-      display: hidden;
     }
   }
 

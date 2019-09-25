@@ -78,15 +78,21 @@ body {
   font-size: 1.6rem;
   line-height: 1.7;
   color: var(--color-grey-dark-2);
-  padding: 3rem;
   box-sizing: border-box; }
 
 .container {
   max-width: 120rem;
-  margin: 0 auto;
+  margin: 3rem auto;
   background-color: var(--color-grey-light-2);
   box-shadow: var(--shadow-dark);
-  min-height: 50rem; }
+  min-height: 50rem;
+  transition: all .2s; }
+  @media only screen and (max-width: 75em) {
+    .container {
+      margin: 0;
+      max-width: 100%;
+      width: 100%;
+      min-height: 100vh; } }
 
 .header {
   display: flex;
@@ -107,8 +113,9 @@ body {
   align-self: stretch;
   align-items: center;
   flex: 0 0 300px; }
-  .menu__hamburger {
-    display: none; }
+  @media only screen and (max-width: 31.25em) {
+    .menu {
+      display: none; } }
   .menu__item {
     cursor: pointer;
     display: flex;
@@ -129,3 +136,6 @@ body {
     width: 2.25rem;
     fill: var(--color-grey-dark-3);
     transition: all .2s; }
+
+.navigation {
+  display: none; }

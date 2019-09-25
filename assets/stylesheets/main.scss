@@ -1,13 +1,14 @@
 // CSS Reset
 @import "base/reset.scss";
 
-// Core
-@import "base/colors.scss";
-@import "base/breakpoints.scss";
+// Abstracts
+@import "abstracts/mixins.scss";
+@import "abstracts/variables.scss";
 
 // Layout
 @import "layout/container.scss";
 @import "layout/header.scss";
+@import "layout/navigation.scss";
 
 // Components
 //@import "components/*";
