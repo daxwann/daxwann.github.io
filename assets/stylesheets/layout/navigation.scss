@@ -17,10 +17,18 @@
     height: 5rem;
     cursor: pointer;
     position: relative;
-    z-index: 10;
+    border-radius: 50%;
+    z-index: 11;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  &__checkbox:checked + &__button {
+    margin-top: 2rem;
+    background-color: #fff;
+    box-shadow: var(--shadow-dark);
   }
 
   &__hamburger {
@@ -67,8 +75,11 @@
   }
   
   &__nav {
-    display: none;
     position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    color: #fff;
     height: 100vh;
     width: 0;
     top: 0;
@@ -77,17 +88,73 @@
     z-index: 8;
     transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
+
+  &__checkbox:checked ~ &__nav {
+    opacity: 1;
+    width: 100%;
+    left: 0;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   
   &__background {
-    display: none;
     position: fixed;
     height: 100vh;
     width: 0;
     top: 0;
     right: -100vw;
-    background-image: radial-gradient(var(--color-blue-light), 
-                        var(--color-blue-dark));
+    background-image: linear-gradient(to bottom, var(--color-blue-light), 
+                        var(--color-blue-darkest));
     z-index: 7;
     transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  &__checkbox:checked ~ &__background {
+    opacity: 1;
+    width: 100%;
+    right: 0;
+  }
+
+  &__item {
+    margin: 1.5rem;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+
+    &:link,
+    &:visited {
+      padding: 1rem 3rem;
+      text-transform: uppercase;
+      font-size: 2rem;
+      background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+      background-size: 250%;
+      transition: all .4s;
+    }
+
+    &:hover,
+    &:active {
+      background-position: 100%;
+      color: var(--color-blue-dark);
+      transform: translateX(1rem);
+    }
+  }
+
+  &__link:hover > &__icon,
+  &__link:active > &__icon {
+    fill: var(--color-blue-dark);
+  }
+
+  &__icon {
+    fill: #fff;
+    height: 4rem;
+    width: 4rem;
+    margin-right: 2rem;
+    transition: all .4s;
   }
 }

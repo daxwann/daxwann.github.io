@@ -41,6 +41,11 @@ button {
   appearance: none;
 }
 
+label:focus,
+input:focus {
+  outline: none;
+}
+
 button,
 input[type="submit"] {
   cursor: pointer;
