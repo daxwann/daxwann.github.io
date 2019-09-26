@@ -54,12 +54,16 @@
 
   &__checkbox:checked + &__button &__hamburger::before {
     top: 0;
-    transform: rotate(125deg);
+    transform: rotate(135deg);
   }
 
   &__checkbox:checked + &__button &__hamburger::after {
     top: 0;
     transform: rotate(-135deg);
+  }
+
+  &__checkbox:checked + &__button &__hamburger {
+    background-color: transparent;
   }
   
   &__nav {

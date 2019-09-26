@@ -175,10 +175,12 @@ body {
       top: .8rem; }
   .navigation__checkbox:checked + .navigation__button .navigation__hamburger::before {
     top: 0;
-    transform: rotate(125deg); }
+    transform: rotate(135deg); }
   .navigation__checkbox:checked + .navigation__button .navigation__hamburger::after {
     top: 0;
     transform: rotate(-135deg); }
+  .navigation__checkbox:checked + .navigation__button .navigation__hamburger {
+    background-color: transparent; }
   .navigation__nav {
     display: none;
     position: fixed;
