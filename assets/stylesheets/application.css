@@ -130,7 +130,7 @@ body {
     flex: 1;
     text-transform: uppercase;
     transition: all .2s;
-    color: var(--color-blue-dark); }
+    color: var(--color-grey-dark-3); }
     .menu__item:hover {
       background-color: var(--color-blue-light);
       color: #fff; }
@@ -139,7 +139,7 @@ body {
   .menu__icon {
     height: 2.25rem;
     width: 2.25rem;
-    fill: var(--color-blue-dark);
+    fill: var(--color-grey-dark-3);
     transition: all .2s; }
 
 .navigation {
@@ -227,11 +227,12 @@ body {
     width: 100%;
     right: 0; }
   .navigation__item {
-    margin: 1.5rem; }
+    margin: 1.5rem 0; }
   .navigation__link {
     display: flex;
     align-items: center; }
     .navigation__link:link, .navigation__link:visited {
+      color: var(--color-grey-light-2);
       padding: 1rem 3rem;
       text-transform: uppercase;
       font-size: 2rem;
@@ -246,7 +247,7 @@ body {
   .navigation__link:active > .navigation__icon {
     fill: var(--color-blue-dark); }
   .navigation__icon {
-    fill: #fff;
+    fill: var(--color-grey-light-2);
     height: 4rem;
     width: 4rem;
     margin-right: 2rem;
