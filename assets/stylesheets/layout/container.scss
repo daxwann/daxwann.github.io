@@ -15,6 +15,7 @@ body {
 .no-scroll {
   overflow: hidden;
   position: fixed;
+  height: 100%;
 }
 
 .container {
@@ -24,6 +25,7 @@ body {
   box-shadow: var(--shadow-dark);
   min-height: 50rem;
   transition: all .2s;
+  overflow: auto;
 
   @include respond(bp-largest) {
     margin: 0;
