@@ -12,6 +12,10 @@ body {
   box-sizing: border-box;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .container {
   max-width: 120rem;
   margin: 3rem auto;
