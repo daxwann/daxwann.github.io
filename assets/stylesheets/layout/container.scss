@@ -10,11 +10,11 @@ body {
   line-height: 1.7;
   color: var(--color-grey-dark-2);
   box-sizing: border-box;
-  position: relative;
 }
 
 .no-scroll {
   overflow: hidden;
+  position: fixed;
 }
 
 .container {
