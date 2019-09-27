@@ -7,6 +7,9 @@ function toggleNoScroll() {
     if (checkbox.checked) {
       html.classList.add("no-scroll")
       body.classList.add("no-scroll");
+      body.addEventListener("ontouchend", (e) => {
+        e.preventDefault();
+      });
     } else {
       body.classList.remove("no-scroll");
       html.classList.remove("no-scroll");
