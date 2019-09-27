@@ -309,8 +309,12 @@ body {
   padding: 2rem;
   background-color: #fff;
   flex: 0 0 40%;
-  box-shadow: var(--shadow-dark);
-  margin-bottom: 2rem; }
+  box-shadow: var(--shadow-light);
+  margin-bottom: 2rem;
+  transition: all .4s; }
+
+.skills__group:hover {
+  transform: translateY(-4px); }
 
 .skills__category-name {
   text-decoration: underline; }
