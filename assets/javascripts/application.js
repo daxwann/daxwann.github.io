@@ -7,12 +7,15 @@ function toggleNoScroll() {
     if (checkbox.checked) {
       html.classList.add("no-scroll")
       body.classList.add("no-scroll");
-      body.addEventListener("ontouchend", (e) => {
+      body.addEventListener("touchmove", (e) => {
         e.preventDefault();
-      });
+      }, false);
     } else {
       body.classList.remove("no-scroll");
       html.classList.remove("no-scroll");
+      body.removeEventListener("touchmove", (e) => {
+        e.preventDefault();
+      }, false);
     }
   });
 }
