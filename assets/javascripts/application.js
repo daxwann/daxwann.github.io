@@ -9,16 +9,16 @@ function toggleNoScroll() {
       html.classList.add("no-scroll")
       body.classList.add("no-scroll");
       container.classList.add("no-scroll");
-      body.addEventListener("touchmove", (e) => {
+     /* body.addEventListener("touchmove", (e) => {
         e.preventDefault();
-      }, false);
+      }, false); */
     } else {
       container.classList.remove("no-scroll");
       body.classList.remove("no-scroll");
       html.classList.remove("no-scroll");
-      body.removeEventListener("touchmove", (e) => {
+    /*  body.removeEventListener("touchmove", (e) => {
         e.preventDefault();
-      }, false);
+      }, false);*/
     }
   });
 }
