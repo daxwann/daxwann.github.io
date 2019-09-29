@@ -59,6 +59,7 @@
 
     @include respond(bp-smallest) {
       font-size: 1.8rem;
+      margin-bottom: 1rem;
     }
   }
 
@@ -70,6 +71,7 @@
 
     @include respond(bp-smallest) {
       font-size: 1.6rem;
+      margin-bottom: 2.5rem;
     }
   }
 
@@ -132,7 +134,7 @@
     margin-bottom: 0.5rem;
     font-weight: 700;
     font-size: 1.8rem;
-    
+
     @include respond(bp-smallest) {
       font-size: 1.6rem;
     }
