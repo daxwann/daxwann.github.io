@@ -286,15 +286,21 @@ body {
   font-size: 2.4rem;
   font-weight: 700;
   flex: 0 0 100%; }
+  @media only screen and (max-width: 25em) {
+    .about__section-title {
+      font-size: 1.8rem; } }
 
 .about__skills {
-  padding: 0 5rem;
+  padding: 0 4rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   align-content: center;
   border-bottom: var(--line); }
+  @media only screen and (max-width: 43.75em) {
+    .about__skills {
+      padding: 0 2rem; } }
 
 .intro__name {
   color: #fff;
@@ -304,29 +310,64 @@ body {
   padding: .5rem 1.5rem;
   margin-bottom: 1.5rem;
   background-image: linear-gradient(to right, var(--color-blue-light), var(--color-blue-dark)); }
+  @media only screen and (max-width: 25em) {
+    .intro__name {
+      font-size: 1.8rem; } }
 
 .intro__title {
   color: var(--color-grey-dark-1);
   padding: .5rem;
   margin-bottom: 5rem;
   background-image: linear-gradient(to right, var(--color-grey-light-1), var(--color-grey-light-3)); }
+  @media only screen and (max-width: 25em) {
+    .intro__title {
+      font-size: 1.4rem; } }
 
 .intro__pitch {
   color: #fff;
   margin: 0 4rem;
-  padding: 1rem;
+  padding: .5rem 1rem;
   background-color: var(--color-grey-transparent); }
+  .intro__pitch > p:first-child {
+    margin-bottom: .5rem; }
+  @media only screen and (max-width: 25em) {
+    .intro__pitch {
+      font-size: 1.2rem;
+      margin: 0 2rem; } }
 
 .skills__group {
   padding: 2rem;
   background-color: #fff;
-  flex: 0 0 40%;
-  box-shadow: var(--shadow-light);
-  margin-bottom: 2rem;
-  transition: all .4s; }
+  flex: 0 1 300px;
+  box-shadow: var(--shadow-dark);
+  margin: 2rem;
+  transition: all .4s;
+  border-radius: 3px; }
+  @media only screen and (max-width: 43.75em) {
+    .skills__group {
+      margin: 1rem; } }
 
 .skills__group:hover {
   transform: translateY(-4px); }
 
+@media only screen and (max-width: 25em) {
+  .skills__list {
+    font-size: 1.2rem; } }
+
+.skills__item {
+  display: flex;
+  align-items: center; }
+
+.skills__bullet {
+  width: 1.4rem;
+  height: 1.4rem;
+  fill: var(--color-blue-dark);
+  margin-right: .5rem; }
+
 .skills__category-name {
-  text-decoration: underline; }
+  text-decoration: underline;
+  margin-bottom: 0.5rem;
+  font-weight: 700; }
+  @media only screen and (max-width: 25em) {
+    .skills__category-name {
+      font-size: 1.4rem; } }

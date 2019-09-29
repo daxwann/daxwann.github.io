@@ -26,16 +26,24 @@
     font-size: 2.4rem;
     font-weight: 700;
     flex: 0 0 100%;
+
+    @include respond(bp-smallest) {
+      font-size: 1.8rem;
+    }
   }
 
   &__skills {
-    padding: 0 5rem;
+    padding: 0 4rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     align-content: center;
     border-bottom: var(--line);
+
+    @include respond(bp-small) {
+      padding: 0 2rem;
+    }
   }
 }
 
@@ -48,6 +56,10 @@
     padding: .5rem 1.5rem;
     margin-bottom: 1.5rem;
     background-image: linear-gradient(to right, var(--color-blue-light), var(--color-blue-dark));
+
+    @include respond(bp-smallest) {
+      font-size: 1.8rem;
+    }
   }
 
   &__title {
@@ -55,13 +67,26 @@
     padding: .5rem;
     margin-bottom: 5rem;
     background-image: linear-gradient(to right, var(--color-grey-light-1), var(--color-grey-light-3));
+
+    @include respond(bp-smallest) {
+      font-size: 1.4rem;
+    }
   }
 
   &__pitch {
     color: #fff;
     margin: 0 4rem;
-    padding: 1rem;
+    padding: .5rem 1rem;
     background-color: var(--color-grey-transparent);
+
+    & > p:first-child {
+      margin-bottom: .5rem;
+    }
+
+    @include respond(bp-smallest) {
+      font-size: 1.2rem;
+      margin: 0 2rem;
+    }
   }
 }
 
@@ -69,17 +94,45 @@
   &__group {
    padding: 2rem;
    background-color: #fff;
-   flex: 0 0 40%;
-   box-shadow: var(--shadow-light);
-   margin-bottom: 2rem;
+   flex: 0 1 300px;
+   box-shadow: var(--shadow-dark);
+   margin: 2rem;
    transition: all .4s;
+   border-radius: 3px;
+
+    @include respond(bp-small) {
+      margin: 1rem;
+    }
   }
 
   &__group:hover {
     transform: translateY(-4px);
   }
 
+  &__list {
+    @include respond(bp-smallest) {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__bullet {
+    width: 1.4rem;
+    height: 1.4rem;
+    fill: var(--color-blue-dark);
+    margin-right: .5rem;
+  }
+
   &__category-name {
     text-decoration: underline;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    @include respond(bp-smallest) {
+      font-size: 1.4rem;
+    }
   }
 }
