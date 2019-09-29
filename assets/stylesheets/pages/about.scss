@@ -21,7 +21,7 @@
   &__section-title {
     text-align: center;
     color: var(--color-grey-dark-1);
-    padding: 2rem;
+    padding-top: 2rem;
     text-transform: uppercase;
     font-size: 2.4rem;
     font-weight: 700;
@@ -41,7 +41,7 @@
     align-content: center;
     border-bottom: var(--line);
 
-    @include respond(bp-small) {
+    @include respond(bp-smallest) {
       padding: 0 2rem;
     }
   }
@@ -65,7 +65,7 @@
 
   &__title {
     color: var(--color-grey-dark-1);
-    padding: .5rem;
+    padding: 0 .5rem;
     margin-bottom: 5rem;
     background-image: linear-gradient(to right, var(--color-grey-light-1), var(--color-grey-light-3));
 
