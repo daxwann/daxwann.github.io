@@ -321,7 +321,7 @@ body {
   background-image: linear-gradient(to right, var(--color-grey-light-1), var(--color-grey-light-3)); }
   @media only screen and (max-width: 25em) {
     .intro__title {
-      font-size: 1.4rem; } }
+      font-size: 1.6rem; } }
 
 .intro__pitch {
   color: #fff;
@@ -332,7 +332,7 @@ body {
     margin-bottom: .5rem; }
   @media only screen and (max-width: 25em) {
     .intro__pitch {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       margin: 0 2rem; } }
 
 .skills__group {
@@ -352,7 +352,7 @@ body {
 
 @media only screen and (max-width: 25em) {
   .skills__list {
-    font-size: 1.2rem; } }
+    font-size: 1.4rem; } }
 
 .skills__item {
   display: flex;
@@ -367,7 +367,8 @@ body {
 .skills__category-name {
   text-decoration: underline;
   margin-bottom: 0.5rem;
-  font-weight: 700; }
+  font-weight: 700;
+  font-size: 1.8rem; }
   @media only screen and (max-width: 25em) {
     .skills__category-name {
-      font-size: 1.4rem; } }
+      font-size: 1.6rem; } }

@@ -69,7 +69,7 @@
     background-image: linear-gradient(to right, var(--color-grey-light-1), var(--color-grey-light-3));
 
     @include respond(bp-smallest) {
-      font-size: 1.4rem;
+      font-size: 1.6rem;
     }
   }
 
@@ -84,7 +84,7 @@
     }
 
     @include respond(bp-smallest) {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       margin: 0 2rem;
     }
   }
@@ -111,7 +111,7 @@
 
   &__list {
     @include respond(bp-smallest) {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
     }
   }
 
@@ -131,8 +131,10 @@
     text-decoration: underline;
     margin-bottom: 0.5rem;
     font-weight: 700;
+    font-size: 1.8rem;
+    
     @include respond(bp-smallest) {
-      font-size: 1.4rem;
+      font-size: 1.6rem;
     }
   }
 }
