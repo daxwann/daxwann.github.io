@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +10,19 @@
   <title>Dax Wann's Github Portfolio</title>
   <meta name="author" content="Dax Wann">
   <meta name="description" content="The portfolio of a web developer">
-  <meta name="keywords" content="dax wann front-end fullstack web development html css javascript ajax jquery bootstrap ui ux design ruby rails php python react">
-  
+  <meta name="keywords"
+    content="dax wann front-end fullstack web development html css javascript ajax jquery bootstrap ui ux design ruby rails php python react">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154576856-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-154576856-1');
+  </script>
 </head>
+
 <body>
   <div class="container">
     <header class="header">
@@ -19,7 +30,8 @@
         <a href="home.html#top">
           <img src="assets/images/logo.png" alt="logo" class="logo">
         </a>
-      </div><!--logo-->
+      </div>
+      <!--logo-->
       <nav class="menu">
         <a class="menu__item">
           <svg class="menu__icon">
@@ -39,7 +51,8 @@
           </svg>
           <span>Contact</span>
         </a>
-      </nav><!--menu-->
+      </nav>
+      <!--menu-->
       <div class="navigation">
         <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
         <label for="navi-toggle" class="navigation__button">
@@ -82,7 +95,8 @@
             </li>
           </ul>
         </nav>
-      </div><!--navigation-->
+      </div>
+      <!--navigation-->
     </header>
     <main class="about">
       <section class="about__intro">
@@ -90,7 +104,8 @@
         <h2 class="intro__title">App Developer</h2>
         <div class="intro__pitch">
           <p>Ciao. I'm a full-stack app developer who likes to try new things.</p>
-          <p>I'm experienced in building responsive websites and progressive web apps in multiple languages and frameworks.</p>
+          <p>I'm experienced in building responsive websites and progressive web apps in multiple languages and
+            frameworks.</p>
         </div>
       </section>
       <section class="about__skills">
@@ -264,4 +279,5 @@
   </div><!-- container -->
   <script src="assets/javascripts/application.js"></script>
 </body>
+
 </html>
